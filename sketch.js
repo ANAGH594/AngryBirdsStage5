@@ -71,6 +71,12 @@ function mouseDragged(){
     Matter.Body.setPosition(bird.body, {x: mouseX , y: mouseY});
 }
 
+function keypressed(){
+    if(keyCode===65){
+        slingshot.attach(bird.body)
+    }
+}
+
 
 function mouseReleased(){
     slingshot.fly();
